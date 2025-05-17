@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
 html, body {
-  background-color: hsl(var(--background)); /* usa tu variable personalizada */
-  color: hsl(var(--foreground)); /* opcional: para asegurar color del texto */
   height: 100%;
   width: 100%;
 }
