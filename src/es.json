@@ -1,0 +1,97 @@
+{
+    "nav": {
+      "about": "Sobre Mí",
+      "projects": "Proyectos",
+      "gallery": "Galería",
+      "contact": "Contacto",
+      "resume": "Currículum"
+    },
+    "hero": {
+      "greeting": "Hola, soy",
+      "name": "Yuli",
+      "title": "Desarrolladora Frontend & Mobile | DevRel",
+      "description": "Construyo experiencias digitales excepcionales y accesibles para la web y aplicaciones móviles.",
+      "contact": "Contáctame",
+      "resume": "Descargar CV"
+    },
+    "about": {
+      "title": "Sobre Mí",
+      "subtitle": "Soy desarrolladora frontend con más de tres años de experiencia construyendo aplicaciones web y móviles usando JavaScript, TypeScript, React y React Native. Me apasiona la tecnología y compartir conocimiento, por lo que creo contenido tecnológico en redes sociales y co-organizo React JS Colombia, una comunidad que fomenta el aprendizaje dentro del ecosistema React. He trabajado en desarrollo de interfaces escalables, integración de APIs y optimización de experiencias digitales. Adicionalmente, he ayudado a pequeñas empresas a establecer su presencia en línea con soluciones web a la medida. Mi enfoque combina la experiencia técnica con la comunicación, siempre con el objetivo de crear productos funcionales, atractivos e impactantes para los usuarios.",
+      "skills": {
+        "title": "Habilidades",
+        "description": "Tecnologías con las que he estado trabajando recientemente"
+      },
+      "experience": {
+        "title": "Experiencia",
+        "description": "Mi trayectoria profesional hasta ahora",
+        "thirdJob": {
+          "title": "Frontend Developer",
+          "subtitle": "Ruedata | Sept 2022 – Ene 2025 | Remoto"
+        },
+        "secondJob": {
+          "title": "Freelance Web Developer",
+          "subtitle": "Freelance | Ene 2021 - Ago 2022 | Remoto"
+        },
+        "firstJob": {
+          "title": "Freelance Data Analyst",
+          "subtitle": "Cámara de Comercio de Cartagena | Oct 2024 - Dic 2024 | Remoto"
+        }
+      },
+      "education": {
+        "title": "Educación",
+        "description": "Mi formación académica",
+        "secondDegree": {
+          "title": "Bootcamp en Frontend Web Development",
+          "subtitle": "Laboratoria | Enero 2022 - Junio 2022"
+        },
+        "firstDegree": { 
+          "title": "Técnico Superior Universitario en Informática",
+          "subtitle": "Instituto Universitario de Tecnología y Administración Industrial - IUTA, Venezuela | Enero 2008 - Septiembre 2011"
+        }
+      }
+    },
+    "projects": {
+      "title": "Proyectos",
+      "subtitle": "Aquí encontrarás algunos de los proyectos personales y de clientes que he creado"
+    },
+    "gallery": {
+      "title": "Galería de Fotos",
+      "subtitle": "Una colección de momentos de eventos y conferencias a las que he asistido"
+    },
+    "contact": {
+      "title": "Contacto",
+      "subtitle": "No dudes en contactarme si quieres colaborar conmigo o simplemente charlar",
+      "getInTouch": "Ponte en contacto",
+      "email": "Correo",
+      "phone": "Teléfono",
+      "location": "Ubicación",
+      "form": {
+        "name": "Nombre",
+        "namePlaceholder": "Tu nombre",
+        "email": "Correo",
+        "emailPlaceholder": "Tu correo",
+        "subject": "Asunto",
+        "subjectPlaceholder": "¿De qué se trata?",
+        "message": "Mensaje",
+        "messagePlaceholder": "Tu mensaje",
+        "send": "Enviar Mensaje",
+        "sending": "Enviando...",
+        "success": "¡Tu mensaje ha sido enviado con éxito!",
+        "error": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo.",
+        "errors": {
+          "name": "El nombre es obligatorio",
+          "email": "El correo es obligatorio",
+          "emailInvalid": "Por favor, introduce un correo válido",
+          "subject": "El asunto es obligatorio",
+          "message": "El mensaje es obligatorio"
+        }
+      }
+    },
+    "footer": {
+      "description": "Un portafolio que muestra mi trabajo y habilidades como desarrollador front-end.",
+      "navigation": "Navegación",
+      "connect": "Conectar",
+      "rights": "Todos los derechos reservados.",
+      "email": "laduquesadev@gmail.com"
+    }
+  }

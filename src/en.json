@@ -1,0 +1,97 @@
+{
+    "nav": {
+      "about": "About",
+      "projects": "Projects",
+      "gallery": "Gallery",
+      "contact": "Contact",
+      "resume": "Resume"
+    },
+    "hero": {
+      "greeting": "Hi, I'm",
+      "name": "Yuli",
+      "title": "Frontend & Mobile Developer | DevRel",
+      "description": "I build exceptional and accessible digital experiences for the web and mobile apps.",
+      "contact": "Contact Me",
+      "resume": "Download CV"
+    },
+    "about": {
+      "title": "About Me",
+      "subtitle": "I'm a frontend and mobile developer with over three years of experience building web and mobile applications using JavaScript, TypeScript, React, and React Native. I’m passionate about technology and knowledge sharing, which is why I create tech content on social media and co-organize React JS Colombia, a community that fosters learning within the React ecosystem. I've worked on scalable interface development, API integration, and optimizing digital experiences. Additionally, I've helped small businesses establish their online presence with tailored web solutions. My approach combines technical expertise with communication, always aiming to create functional, engaging, and impactful products for users.",
+      "skills": {
+        "title": "Skills",
+        "description": "Technologies I've been working with recently"
+      },
+      "experience": {
+        "title": "Experience",
+        "description": "My professional journey so far",
+        "thirdJob": {
+          "title": "Frontend Developer",
+          "subtitle": "Ruedata | Sept 2022 – Jan 2025 | Remote"
+        },
+        "secondJob": {
+          "title": "Freelance Web Developer",
+          "subtitle": "Self-Employed | Jan 2021 - Aug 2022 | Remote"
+        },
+        "firstJob": {
+          "title": "Freelance Data Analyst",
+          "subtitle": "Cámara de Comercio de Cartagena | Oct 2024 - Dec 2024 | Remote"
+        }
+      },
+      "education": {
+        "title": "Education",
+        "description": "My academic background",
+        "secondDegree": {
+          "title": "Bootcamp in Frontend Web Development",
+          "subtitle": "Laboratoria | January 2022 - June 2022"
+        },
+        "firstDegree": {
+          "title": "Higher University Technician in Computer Science",
+          "subtitle": "Instituto Universitario de Tecnología y Administración Industrial - IUTA, Venezuela | January 2008 - September 2011"
+        }
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitle": "Here you will find some of the personal and client projects that I created"
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "subtitle": "A collection of moments from events and conferences I've attended"
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Feel free to reach out if you want to collaborate with me, or simply have a chat",
+      "getInTouch": "Get in touch",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "form": {
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "email": "Email",
+        "emailPlaceholder": "Your email",
+        "subject": "Subject",
+        "subjectPlaceholder": "What is this regarding?",
+        "message": "Message",
+        "messagePlaceholder": "Your message",
+        "send": "Send Message",
+        "sending": "Sending...",
+        "success": "Your message has been sent successfully!",
+        "error": "There was an error sending your message. Please try again.",
+        "errors": {
+          "name": "Name is required",
+          "email": "Email is required",
+          "emailInvalid": "Please enter a valid email",
+          "subject": "Subject is required",
+          "message": "Message is required"
+        }
+      }
+    },
+    "footer": {
+      "description": "A portfolio showcasing my work and skills as a front-end developer.",
+      "navigation": "Navigation",
+      "connect": "Connect",
+      "rights": "All rights reserved.",
+      "email": "laduquesadev@gmail.com"
+    }
+  }
