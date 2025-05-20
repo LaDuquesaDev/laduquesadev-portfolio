@@ -16,7 +16,7 @@
     },
     "about": {
       "title": "About Me",
-      "subtitle": "I'm a frontend and mobile developer with over three years of experience building web and mobile applications using JavaScript, TypeScript, React, and React Native. I’m passionate about technology and knowledge sharing, which is why I create tech content on social media and co-organize React JS Colombia, a community that fosters learning within the React ecosystem. I've worked on scalable interface development, API integration, and optimizing digital experiences. Additionally, I've helped small businesses establish their online presence with tailored web solutions. My approach combines technical expertise with communication, always aiming to create functional, engaging, and impactful products for users.",
+      "subtitle": "I am a Frontend Developer with over 3 years of experience building responsive and scalable web and mobile applications using React.js, React Native and TypeScript. I specialize in turning Figma designs into pixel-perfect, accessible user interfaces, integrating RESTful APIs, and optimizing performance across devices and browsers. With a strong foundation in Agile methodologies, I enjoy collaborating in diverse teams to build data-driven, inclusive digital experiences that are both functional and beautiful.",
       "skills": {
         "title": "Skills",
         "description": "Technologies I've been working with recently"
