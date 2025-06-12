@@ -49,11 +49,11 @@ export const About = () => {
               </SkillItem>
               <SkillItem>
                 <SkillDot />
-                <span>Next.js, Node.js, Express</span>
+                <span>Next.js, Node.js, React Native</span>
               </SkillItem>
               <SkillItem>
                 <SkillDot />
-                <span>Git, GitHub, Jira, Firebase</span>
+                <span>Git, GitHub, Jira, Firebase, AWS</span>
               </SkillItem>
               <SkillItem>
                 <SkillDot />

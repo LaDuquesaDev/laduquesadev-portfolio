@@ -45,9 +45,11 @@ export const Projects = () => {
                   >
                     GitHub
                   </a>
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="btn-outline btn-sm">
+                  {project.demo && (
+                  <a href={project.demo || ""} target="_blank" rel="noopener noreferrer" className="btn-outline btn-sm">
                     Live Demo
                   </a>
+                  )}
                 </ButtonGroup>
               </ProjectContent>
             </ProjectCard>

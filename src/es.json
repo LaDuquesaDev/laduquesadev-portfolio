@@ -16,7 +16,7 @@
     },
     "about": {
       "title": "Sobre Mí",
-      "subtitle": "Soy Desarrolladora Frontend con más de 3 años de experiencia construyendo aplicaciones web y móviles responsivas y escalables usando React.js, React Native y TypeScript. Me especializo en transformar diseños de Figma en interfaces de usuario pixel-perfect y accesibles, integrar APIs RESTful y optimizar el rendimiento en distintos dispositivos y navegadores. Con una sólida base en metodologías Ágiles, disfruto colaborar en equipos diversos para crear experiencias digitales inclusivas, funcionales y visualmente atractivas.",
+      "subtitle": "Soy desarrolladora frontend con experiencia creando interfaces intuitivas, accesibles y visualmente atractivas. Me apasiona transformar ideas en experiencias digitales que conecten con las personas, combinando diseño, código y buenas prácticas de desarrollo. He trabajado con tecnologías modernas como React, TypeScript, Zustand, y React Native, enfocándome en la experiencia del usuario, la arquitectura del proyecto y la calidad del código. Además, disfruto compartir conocimiento, crear contenido técnico y colaborar en comunidades, lo que me ha acercado al mundo del Developer Relations. Busco proyectos que me reten, me inspiren y me permitan seguir creciendo como profesional y como persona.",
       "skills": {
         "title": "Habilidades",
         "description": "Tecnologías con las que he estado trabajando recientemente"

@@ -1,16 +1,12 @@
 "use client"
 
-// import { Hero } from "@/components/Hero"
 import { About } from "@/components/About"
-// import { Contact } from "@/components/Contact"
 import { Footer } from "@/components/Footer"
-// import { PhotoGallery } from "@/components/PhotoGallery"
-// import { Contact } from "@/components/Contact"
+import { Contact } from "@/components/Contact"
 import { Header } from "@/components/Header"
 import { Hero } from "@/components/Hero"
 import { PhotoGallery } from "@/components/PhotoGallery"
 import { Projects } from "@/components/Projects"
-// import { Footer } from "@/components/Footer"
 
 import { useEffect, useState } from "react"
 
@@ -52,7 +48,7 @@ export default function Home() {
       <About />
       <Projects />
       <PhotoGallery />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </main>
   )

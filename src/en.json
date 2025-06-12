@@ -16,7 +16,7 @@
     },
     "about": {
       "title": "About Me",
-      "subtitle": "I am a Frontend Developer with over 3 years of experience building responsive and scalable web and mobile applications using React.js, React Native and TypeScript. I specialize in turning Figma designs into pixel-perfect, accessible user interfaces, integrating RESTful APIs, and optimizing performance across devices and browsers. With a strong foundation in Agile methodologies, I enjoy collaborating in diverse teams to build data-driven, inclusive digital experiences that are both functional and beautiful.",
+      "subtitle": "I am a frontend developer with experience creating intuitive, accessible, and visually appealing interfaces. I am passionate about turning ideas into digital experiences that connect with people, combining design, code, and best development practices. I have worked with modern technologies such as React, TypeScript, Zustand, and React Native, focusing on user experience, project architecture, and code quality. I also enjoy sharing knowledge, creating technical content, and collaborating with communities, which has brought me closer to the world of Developer Relations. I am looking for projects that challenge me, inspire me, and allow me to keep growing both professionally and personally.",
       "skills": {
         "title": "Skills",
         "description": "Technologies I've been working with recently"

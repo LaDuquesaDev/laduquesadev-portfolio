@@ -5,10 +5,10 @@ export interface Project {
   image: string
   technologies: string[]
   github: string
-  demo: string
+  demo: string | null
 }
 
-export interface Photo {
+export interface PhotoGallery {
   id: number
   url: string
   caption: string
