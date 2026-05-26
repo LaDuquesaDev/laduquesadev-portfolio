@@ -3,7 +3,7 @@
 import type React from "react"
 import Link from "next/link"
 import { useFooter } from "@/hooks/useFooter"
-import { Copyright, FooterContainer, FooterContent, FooterDescription, FooterEmail, FooterGrid, FooterHeading, FooterLink, FooterLogo, FooterNav, FooterSection, SocialLink, SocialLinks } from "@/styles/footer-styles"
+import { Copyright, FooterContainer, FooterContent, FooterDescription, FooterGrid, FooterHeading, FooterLink, FooterLogo, FooterNav, FooterSection, SocialLink, SocialLinks } from "@/styles/footer-styles"
 
 
 export const Footer = () => {
