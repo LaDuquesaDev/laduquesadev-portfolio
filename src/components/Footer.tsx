@@ -122,7 +122,6 @@ export const Footer = () => {
                 </svg>
               </SocialLink> */}
             </SocialLinks>
-              <FooterEmail>{<SocialLink href="mailto:laduquesadev@gmail">laduquesadev@gmail.com</SocialLink>}</FooterEmail>
           </FooterSection>
         </FooterGrid>
 

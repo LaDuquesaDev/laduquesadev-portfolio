@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Yulimar Duque",
-  description: "Front-end Developer",
+  description: "React Native Developer | Mobile · Expo · TypeScript · App Store & Google Play",
 };
 
 export default function RootLayout({

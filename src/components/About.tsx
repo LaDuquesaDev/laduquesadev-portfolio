@@ -45,19 +45,19 @@ export const About = () => {
             <SkillsList>
               <SkillItem>
                 <SkillDot />
-                <span>JavaScript, TypeScript, React</span>
+                <span>React Native, Expo SDK, TypeScript</span>
               </SkillItem>
               <SkillItem>
                 <SkillDot />
-                <span>Next.js, Node.js, Express</span>
+                <span>expo-router, Zustand, TanStack Query</span>
               </SkillItem>
               <SkillItem>
                 <SkillDot />
-                <span>Git, GitHub, Jira, Firebase</span>
+                <span>App Store Connect, Google Play, EAS Build</span>
               </SkillItem>
               <SkillItem>
                 <SkillDot />
-                <span>UI/UX Design, Figma, Agile/Scrum</span>
+                <span>JavaScript, React, Next.js, Astro</span>
               </SkillItem>
             </SkillsList>
           </Card>
@@ -70,6 +70,10 @@ export const About = () => {
             <CardTitle>{t("about.experience.title")}</CardTitle>
             <CardDescription>{t("about.experience.description")}</CardDescription>
             <ExperienceList>
+              <ExperienceItem>
+                <ExperienceTitle>{t("about.experience.currentJob.title")}</ExperienceTitle>
+                <ExperienceCompany>{t("about.experience.currentJob.subtitle")}</ExperienceCompany>
+              </ExperienceItem>
               <ExperienceItem>
                 <ExperienceTitle>{t("about.experience.thirdJob.title")}</ExperienceTitle>
                 <ExperienceCompany>{t("about.experience.thirdJob.subtitle")}</ExperienceCompany>

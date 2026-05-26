@@ -9,14 +9,14 @@
     "hero": {
       "greeting": "Hi, I'm",
       "name": "Yuli",
-      "title": "Frontend & Mobile Developer | DevRel",
-      "description": "I build exceptional and accessible digital experiences for the web and mobile apps.",
+      "title": "React Native Developer <br /> <span>Mobile · Expo · TypeScript</span>",
+      "description": "React Native Developer with 4+ years of experience building mobile applications from zero to production — including full ownership of App Store and Google Play launches.",
       "contact": "Contact Me",
       "resume": "Download CV"
     },
     "about": {
       "title": "About Me",
-      "subtitle": "I am a Frontend Developer with over 3 years of experience building responsive and scalable web and mobile applications using React.js, React Native and TypeScript. I specialize in turning Figma designs into pixel-perfect, accessible user interfaces, integrating RESTful APIs, and optimizing performance across devices and browsers. With a strong foundation in Agile methodologies, I enjoy collaborating in diverse teams to build data-driven, inclusive digital experiences that are both functional and beautiful.",
+      "subtitle": "React Native Developer with 4+ years of experience building and shipping mobile applications from zero to production. I've owned the full development lifecycle — from architecture decisions and feature development to App Store Connect management, EAS Build configuration, TestFlight distribution, and successful releases on both the App Store and Google Play. I work with React Native, Expo, TypeScript, and modern tooling to deliver clean, performant UIs and scalable codebases.",
       "skills": {
         "title": "Skills",
         "description": "Technologies I've been working with recently"
@@ -24,17 +24,21 @@
       "experience": {
         "title": "Experience",
         "description": "My professional journey so far",
+        "currentJob": {
+          "title": "React Native Developer",
+          "subtitle": "Papora | June 2025 – Present | Remote"
+        },
         "thirdJob": {
           "title": "Frontend Developer",
           "subtitle": "Ruedata | Sept 2022 – Jan 2025 | Remote"
         },
         "secondJob": {
           "title": "Freelance Web Developer",
-          "subtitle": "Self-Employed | Jan 2021 - Aug 2022 | Remote"
+          "subtitle": "Self-Employed | Jan 2021 – Aug 2022 | Remote"
         },
         "firstJob": {
           "title": "Freelance Data Analyst",
-          "subtitle": "Cámara de Comercio de Cartagena | Oct 2024 - Dec 2024 | Remote"
+          "subtitle": "Cámara de Comercio de Cartagena | Oct 2024 – Dec 2024"
         }
       },
       "education": {
@@ -42,11 +46,11 @@
         "description": "My academic background",
         "secondDegree": {
           "title": "Bootcamp in Frontend Web Development",
-          "subtitle": "Laboratoria | January 2022 - June 2022"
+          "subtitle": "Laboratoria | January 2022 – June 2022"
         },
         "firstDegree": {
           "title": "Higher University Technician in Computer Science",
-          "subtitle": "Instituto Universitario de Tecnología y Administración Industrial - IUTA, Venezuela | January 2008 - September 2011"
+          "subtitle": "Instituto Universitario de Tecnología y Administración Industrial – IUTA | 2008 – 2011"
         }
       }
     },
@@ -88,10 +92,10 @@
       }
     },
     "footer": {
-      "description": "A portfolio showcasing my work and skills as a front-end developer.",
+      "description": "A portfolio showcasing my work and skills as a React Native Developer.",
       "navigation": "Navigation",
       "connect": "Connect",
       "rights": "All rights reserved.",
-      "email": "laduquesadev@gmail.com"
+      "email": "yuliduquedealba@gmail.com"
     }
   }

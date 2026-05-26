@@ -27,13 +27,13 @@ export const Hero = () => {
           <HeroTitle>
             {t("hero.greeting")} <span>{t("hero.name")}</span>
           </HeroTitle>
-          <HeroSubtitle>{t("hero.title")}</HeroSubtitle>
+          <HeroSubtitle dangerouslySetInnerHTML={{ __html: t("hero.title") }} />
           <HeroDescription>{t("hero.description")}</HeroDescription>
           <ButtonGroup>
             {/* <PrimaryButton as="a" href="#contact">
               {t("hero.contact")}
             </PrimaryButton> */}
-            <SecondaryButton as="a" href="/files/CV_YULIMAR_DUQUE_FRONTEND.pdf" download>
+            <SecondaryButton as="a" href="/files/CV_YULIMAR_DUQUE_RN.pdf" download>
               {t("hero.resume")}
             </SecondaryButton>
           </ButtonGroup>

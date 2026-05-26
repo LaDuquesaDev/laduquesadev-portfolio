@@ -81,6 +81,15 @@ export const HeroSubtitle = styled.h2`
   @media (min-width: 768px) {
     font-size: 2rem;
   }
+
+  span {
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    @media (min-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
 `
 
 export const HeroDescription = styled.p`

@@ -10,7 +10,7 @@ export const Header = () => {
   const { t, isScrolled, isMobileMenuOpen, toggleMobileMenu } = useHeader()
 
   return (
-    <HeaderContainer isScrolled={isScrolled}>
+    <HeaderContainer $isScrolled={isScrolled}>
       <HeaderContent>
         <Link href="/" passHref>
           <Logo>Portfolio</Logo>
@@ -27,7 +27,7 @@ export const Header = () => {
           <ActionButtons>
             <ThemeToggle />
             <LanguageSwitch />
-            <ResumeButton as="a" href="/files/CV_YULIMAR_DUQUE_FRONTEND.pdf" download>
+            <ResumeButton as="a" href="/files/CV_YULIMAR_DUQUE_RN.pdf" download>
               {t("nav.resume")}
             </ResumeButton>
           </ActionButtons>

@@ -1,18 +1,18 @@
 import { Button } from "@/shared/button"
 import styled from "styled-components"
 
-export const HeaderContainer = styled.header<{ isScrolled: boolean }>`
+export const HeaderContainer = styled.header<{ $isScrolled: boolean }>`
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 50;
   transition: all 0.3s ease;
 
-  background-color: ${({ isScrolled, theme }) =>
-    isScrolled ? theme.background : "transparent"};
+  background-color: ${({ $isScrolled, theme }) =>
+    $isScrolled ? theme.background : "transparent"};
   color: ${({ theme }) => theme.foreground};
-  box-shadow: ${({ isScrolled }) =>
-    isScrolled ? "0 2px 4px rgba(0, 0, 0, 0.1)" : "none"};
+  box-shadow: ${({ $isScrolled }) =>
+    $isScrolled ? "0 2px 4px rgba(0, 0, 0, 0.1)" : "none"};
 `
 
 export const HeaderContent = styled.div`

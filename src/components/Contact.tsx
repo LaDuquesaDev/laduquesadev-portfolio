@@ -40,7 +40,7 @@ export const Contact = () => {
                 </IconWrapper>
                 <ContactInfoContent>
                   <ContactInfoLabel>{t("contact.email")}</ContactInfoLabel>
-                  <ContactInfoValue href="mailto:hello@example.com">hello@example.com</ContactInfoValue>
+                  <ContactInfoValue href="mailto:yuliduquedealba@gmail.com">yuliduquedealba@gmail.com</ContactInfoValue>
                 </ContactInfoContent>
               </ContactInfoItem>
 
@@ -62,7 +62,7 @@ export const Contact = () => {
                 </IconWrapper>
                 <ContactInfoContent>
                   <ContactInfoLabel>{t("contact.phone")}</ContactInfoLabel>
-                  <ContactInfoValue href="tel:+1234567890">+1 (234) 567-890</ContactInfoValue>
+                  <ContactInfoValue href="tel:+573153726184">+57 315 3726184</ContactInfoValue>
                 </ContactInfoContent>
               </ContactInfoItem>
 
@@ -85,7 +85,7 @@ export const Contact = () => {
                 </IconWrapper>
                 <ContactInfoContent>
                   <ContactInfoLabel>{t("contact.location")}</ContactInfoLabel>
-                  <ContactInfoText>San Francisco, CA</ContactInfoText>
+                  <ContactInfoText>Medellín, Antioquia, Colombia</ContactInfoText>
                 </ContactInfoContent>
               </ContactInfoItem>
             </ContactInfoList>
