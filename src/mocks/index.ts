@@ -1,45 +1,45 @@
-import { Photo, Project } from "@/models/interfaces";
+import { PhotoGallery, Project } from "@/models/interfaces";
 
 export const projects: Project[] = [
-    {
-      id: 1,
-      title: "La Duquesa Blog",
-      description: "A blog built with Next.js, TypeScript, Astro, and Tailwind CSS.",
-      image: "/laduquesa-blog.gif",
-      technologies: ["Next.js", "TypeScript", "Astro", "Tailwind CSS"],
-      github: "https://github.com/LaDuquesaDev/laduquesa-blog",
-      demo: "https://laduquesa-blog.vercel.app/",
-    },
-    {
-      id: 2,
-      title: "Coffey E-Commerce",
-      description: "Product catalog layout with filtering and sorting, designed to offer an intuitive and responsive user experience.",
-      image: "/coffey-ecommerce.gif",
-      technologies: ["React", "TypeScript", "MUI Material"],
-      github: "https://github.com/LaDuquesaDev/coffey-ecommerce",
-      demo: "https://laduquesadev.github.io/coffey-ecommerce/",
-    },
-    {
-      id: 3,
-      title: "Cipher Cesar",
-      description: "This project will allow you to communicate with other people through encrypted messages, it will allow you to encrypt and decrypt texts.",
-      image: "/cipher-cesar.webp",
-      technologies: ["React", "Python", "TensorFlow", "FastAPI"],
-      github: "https://github.com/LaDuquesaDev/Cifrado-Cesar",
-      demo: "https://laduquesadev.github.io/Cifrado-Cesar/src/index.html",
-    },
-    {
-      id: 4,
-      title: "MD-LINKS",
-      description: "MD-LINKS is a library and a command line tool (CLI) executable with Node.js, which allows identifying, validating and obtaining statistics of the URLs contained in format files. Markdown",
-      image: "/md-links.webp",
-      technologies: ["Node.js", "JavaScript Vanilla"],
-      github: "https://github.com/LaDuquesaDev/md-links",
-      demo: "https://www.npmjs.com/package/md-links-yuli",
-    },
+  {
+    id: 1,
+    title: "La Duquesa Blog",
+    description: "A blog built with Next.js, TypeScript, Astro, and Tailwind CSS.",
+    image: "/laduquesa-blog.gif",
+    technologies: ["Next.js", "TypeScript", "Astro", "Tailwind CSS"],
+    github: "https://github.com/LaDuquesaDev/laduquesa-blog",
+    demo: "https://laduquesa-blog.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "Popcorner",
+    description: "Explore movies, discover details and create your own movie to-watch list, all with a focus on code quality, scalable architecture and a unique user experience.",
+    image: "/pop-corner.gif",
+    technologies: ["React Native", "TypeScript", "Zustand", "TanStack Query"],
+    github: "https://github.com/LaDuquesaDev/popcorner",
+    demo: null,
+  },
+  {
+    id: 3,
+    title: "Coffey E-Commerce",
+    description: "Product catalog layout with filtering and sorting, designed to offer an intuitive and responsive user experience.",
+    image: "/coffey-ecommerce.gif",
+    technologies: ["React", "TypeScript", "MUI Material"],
+    github: "https://github.com/LaDuquesaDev/coffey-ecommerce",
+    demo: "https://laduquesadev.github.io/coffey-ecommerce/",
+  },
+  {
+    id: 4,
+    title: "Cipher Cesar",
+    description: "This project will allow you to communicate with other people through encrypted messages, it will allow you to encrypt and decrypt texts.",
+    image: "/cipher-cesar.webp",
+    technologies: ["React", "Python", "TensorFlow", "FastAPI"],
+    github: "https://github.com/LaDuquesaDev/Cifrado-Cesar",
+    demo: "https://laduquesadev.github.io/Cifrado-Cesar/src/index.html",
+  },
   ]
 
-  export const photos: Photo[] = [
+  export const photos: PhotoGallery[] = [
     {
       id: 1,
       url: "/photo4.webp",
