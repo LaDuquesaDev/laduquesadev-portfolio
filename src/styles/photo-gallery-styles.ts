@@ -9,7 +9,7 @@ export const GallerySection = styled.section`
 `
 
 export const GalleryContainer = styled.div`
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 2rem;
 `
@@ -23,13 +23,15 @@ export const SectionHeader = styled.div<{ isVisible: boolean }>`
 `
 
 export const SectionTitle = styled.h2`
+  font-family: var(--font-display, 'DM Serif Display', Georgia, serif);
   font-size: 2.25rem;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 1rem;
 `
 
 export const SectionSubtitle = styled.p`
   font-size: 1.125rem;
+  font-weight: 300;
   color: ${({ theme }) => theme.muted};
   max-width: 36rem;
   margin: 0 auto;
@@ -48,9 +50,10 @@ export const CarouselContainer = styled.div<{ isVisible: boolean }>`
 export const CarouselSlide = styled.div`
   position: relative;
   height: 30rem;
-  border-radius: 0.75rem;
+  border-radius: 1.125rem;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.10);
+  border: 1px solid ${({ theme }) => theme.border};
 `
 
 export const SlideCaption = styled.div`
@@ -59,19 +62,21 @@ export const SlideCaption = styled.div`
   left: 0;
   right: 0;
   padding: 1.5rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  color: white;
+  background: linear-gradient(to top, rgba(12,8,2,0.85), transparent);
+  color: #F5F0E8;
 `
 
 export const SlideTitle = styled.h3`
+  font-family: var(--font-display, 'DM Serif Display', Georgia, serif);
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 0.25rem;
 `
 
 export const SlideDate = styled.p`
-  font-size: 0.875rem;
-  opacity: 0.8;
+  font-family: var(--font-mono, 'Geist Mono', monospace);
+  font-size: 0.75rem;
+  opacity: 0.7;
 `
 
 export const PrevButton = styled(Button)`
@@ -89,6 +94,7 @@ export const PrevButton = styled(Button)`
   justify-content: center;
   background-color: ${({ theme }) => `${theme.background}cc`};
   backdrop-filter: blur(4px);
+  border: 1px solid ${({ theme }) => theme.border};
 `
 
 export const NextButton = styled(Button)`
@@ -106,6 +112,7 @@ export const NextButton = styled(Button)`
   justify-content: center;
   background-color: ${({ theme }) => `${theme.background}cc`};
   backdrop-filter: blur(4px);
+  border: 1px solid ${({ theme }) => theme.border};
 `
 
 export const Indicators = styled.div`

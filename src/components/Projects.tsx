@@ -7,15 +7,11 @@ import { ButtonGroup, ProjectCard, ProjectContent, ProjectDescription, ProjectIm
 import { projects } from "@/mocks"
 
 export const Projects = () => {
-  const { t, isHeaderVisible, isProjectsVisible } = useProjects()
+  const { isProjectsVisible } = useProjects()
 
   return (
     <ProjectsSection id="projects">
       <ProjectsContainer>
-        <SectionHeader isVisible={isHeaderVisible}>
-          <SectionTitle>{t("projects.title")}</SectionTitle>
-          <SectionSubtitle>{t("projects.subtitle")}</SectionSubtitle>
-        </SectionHeader>
 
         <ProjectsGrid>
           {projects.map((project, index) => (

@@ -13,36 +13,44 @@ interface ThemeContextType {
 }
 
 const lightTheme = {
-  background: "#f5f3ff",
-  foreground: "#1e1b2e",
-  primary: "#7c3aed",
-  secondary: "#e4e4ff", 
-  muted: "#888888",
-  border: "#e0e0e0",
+  background: "#FFFBF2",
+  foreground: "#1C1410",
+  primary: "#C4881E",
+  primaryForeground: "#ffffff",
+  secondary: "#FEF3C7",
+  muted: "#78716C",
+  border: "#E8D9B8",
 }
 
 const darkTheme = {
-  background: "#030712",
-  foreground: "#f8f9fa",
-  primary: "#9810fa",
-  secondary: "#1a1a1a",
-  muted: "#888888",
-  border: "#333333",
+  background: "#0C0802",
+  foreground: "#F5F0E8",
+  primary: "#FBBF24",
+  primaryForeground: "#1C1410",
+  secondary: "#1A1208",
+  muted: "#A87D4A",
+  border: "#2D1F0A",
 }
 
 const GlobalStyle = createGlobalStyle<{ theme: typeof lightTheme }>`
   body {
     background-color: ${({ theme }) => theme.background};
     color: ${({ theme }) => theme.foreground};
-    transition: all 0.3s ease;
+    font-family: var(--font-sans, 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif);
+    transition: background-color 0.3s ease, color 0.3s ease;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
   }
 
   a {
     color: ${({ theme }) => theme.primary};
     text-decoration: none;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display, 'DM Serif Display', Georgia, serif);
+    font-weight: 400;
   }
 `
 

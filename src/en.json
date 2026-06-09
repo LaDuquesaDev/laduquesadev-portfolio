@@ -1,101 +1,73 @@
 {
-    "nav": {
-      "about": "About",
-      "projects": "Projects",
-      "gallery": "Gallery",
-      "contact": "Contact",
-      "resume": "Resume"
-    },
-    "hero": {
-      "greeting": "Hi, I'm",
-      "name": "Yuli",
-      "title": "React Native Developer <br /> <span>Mobile · Expo · TypeScript</span>",
-      "description": "React Native Developer with 4+ years of experience building mobile applications from zero to production — including full ownership of App Store and Google Play launches.",
-      "contact": "Contact Me",
-      "resume": "Download CV"
-    },
-    "about": {
-      "title": "About Me",
-      "subtitle": "React Native Developer with 4+ years of experience building and shipping mobile applications from zero to production. I've owned the full development lifecycle — from architecture decisions and feature development to App Store Connect management, EAS Build configuration, TestFlight distribution, and successful releases on both the App Store and Google Play. I work with React Native, Expo, TypeScript, and modern tooling to deliver clean, performant UIs and scalable codebases.",
-      "skills": {
-        "title": "Skills",
-        "description": "Technologies I've been working with recently"
-      },
-      "experience": {
-        "title": "Experience",
-        "description": "My professional journey so far",
-        "currentJob": {
-          "title": "React Native Developer",
-          "subtitle": "Papora | June 2025 – Present | Remote"
-        },
-        "thirdJob": {
-          "title": "Frontend Developer",
-          "subtitle": "Ruedata | Sept 2022 – Jan 2025 | Remote"
-        },
-        "secondJob": {
-          "title": "Freelance Web Developer",
-          "subtitle": "Self-Employed | Jan 2021 – Aug 2022 | Remote"
-        },
-        "firstJob": {
-          "title": "Freelance Data Analyst",
-          "subtitle": "Cámara de Comercio de Cartagena | Oct 2024 – Dec 2024"
-        }
-      },
-      "education": {
-        "title": "Education",
-        "description": "My academic background",
-        "secondDegree": {
-          "title": "Bootcamp in Frontend Web Development",
-          "subtitle": "Laboratoria | January 2022 – June 2022"
-        },
-        "firstDegree": {
-          "title": "Higher University Technician in Computer Science",
-          "subtitle": "Instituto Universitario de Tecnología y Administración Industrial – IUTA | 2008 – 2011"
-        }
-      }
-    },
-    "projects": {
-      "title": "Projects",
-      "subtitle": "Here you will find some of the personal and client projects that I created"
-    },
-    "gallery": {
-      "title": "Photo Gallery",
-      "subtitle": "A collection of moments from events and conferences I've attended"
-    },
-    "contact": {
-      "title": "Contact",
-      "subtitle": "Feel free to reach out if you want to collaborate with me, or simply have a chat",
-      "getInTouch": "Get in touch",
+  "nav": {
+    "about": "About",
+    "products": "Products",
+    "gallery": "Gallery",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Yulimar Duque",
+    "description": "I build mobile apps from zero to production. React Native Developer with 4+ years shipping products to App Store and Google Play.",
+    "cta_products": "See products",
+    "cta_portfolio": "View portfolio →",
+    "contact": "Get in touch",
+    "resume": "Download CV"
+  },
+  "about": {
+    "title": "The person behind the code",
+    "bio1": "I'm a React Native developer with 4+ years building mobile apps. I've led the full development cycle — from architecture decisions and feature development, to setting up EAS Build, managing App Store Connect and Google Play Console, and shipping real products to production.",
+    "bio2": "I'm passionate about sharing what I learn. Beyond building, I create technical content and practical guides so other developers can shorten their learning curve — especially around the app store publishing process, which is often more complex than it seems."
+  },
+  "products": {
+    "label": "Digital products",
+    "title": "What I learned,\nnow in your hands",
+    "subtitle": "Practical guides based on my real experience shipping apps to production."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of personal and client projects"
+  },
+  "gallery": {
+    "title": "Talks & Events",
+    "subtitle": "Moments from conferences and meetups where I've spoken about mobile development"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project or want to collaborate? Reach out.",
+    "getInTouch": "Get in touch",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
       "email": "Email",
-      "phone": "Phone",
-      "location": "Location",
-      "form": {
-        "name": "Name",
-        "namePlaceholder": "Your name",
-        "email": "Email",
-        "emailPlaceholder": "Your email",
-        "subject": "Subject",
-        "subjectPlaceholder": "What is this regarding?",
-        "message": "Message",
-        "messagePlaceholder": "Your message",
-        "send": "Send Message",
-        "sending": "Sending...",
-        "success": "Your message has been sent successfully!",
-        "error": "There was an error sending your message. Please try again.",
-        "errors": {
-          "name": "Name is required",
-          "email": "Email is required",
-          "emailInvalid": "Please enter a valid email",
-          "subject": "Subject is required",
-          "message": "Message is required"
-        }
+      "emailPlaceholder": "Your email",
+      "subject": "Subject",
+      "subjectPlaceholder": "What's it about?",
+      "message": "Message",
+      "messagePlaceholder": "Your message",
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending. Please try again.",
+      "errors": {
+        "name": "Name is required",
+        "email": "Email is required",
+        "emailInvalid": "Please enter a valid email",
+        "subject": "Subject is required",
+        "message": "Message is required"
       }
-    },
-    "footer": {
-      "description": "A portfolio showcasing my work and skills as a React Native Developer.",
-      "navigation": "Navigation",
-      "connect": "Connect",
-      "rights": "All rights reserved.",
-      "email": "yuliduquedealba@gmail.com"
     }
+  },
+  "footer": {
+    "description": "React Native Developer · I build apps and share what I learn.",
+    "navigation": "Navigation",
+    "connect": "Connect",
+    "rights": "All rights reserved.",
+    "email": "yduquedealba@gmail.com"
   }
+}
