@@ -6,29 +6,19 @@ import { useLanguage } from "./useLanguage"
 export const useAbout = () => {
   const { t } = useLanguage()
   const [isHeaderVisible, setIsHeaderVisible] = useState(false)
-  const [isCardsVisible, setIsCardsVisible] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const aboutSection = document.getElementById("about")
       if (aboutSection) {
         const rect = aboutSection.getBoundingClientRect()
-        const isVisible = rect.top < window.innerHeight * 0.75
-
-        if (isVisible) {
+        if (rect.top < window.innerHeight * 0.75) {
           setIsHeaderVisible(true)
-
-          // Delay the cards animation
-          setTimeout(() => {
-            setIsCardsVisible(true)
-          }, 300)
         }
       }
     }
 
-    // Initial check
     handleScroll()
-
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -38,7 +28,7 @@ export const useAbout = () => {
   return {
     t,
     isHeaderVisible,
-    isCardsVisible,
+    isCardsVisible: isHeaderVisible,
     sectionRef,
   }
 }

@@ -5,7 +5,7 @@ export const ProjectsSection = styled.section`
 `
 
 export const ProjectsContainer = styled.div`
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 2rem;
 `
@@ -19,13 +19,15 @@ export const SectionHeader = styled.div<{ isVisible: boolean }>`
 `
 
 export const SectionTitle = styled.h2`
+  font-family: var(--font-display, 'DM Serif Display', Georgia, serif);
   font-size: 2.25rem;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 1rem;
 `
 
 export const SectionSubtitle = styled.p`
   font-size: 1.125rem;
+  font-weight: 300;
   color: ${({ theme }) => theme.muted};
   max-width: 36rem;
   margin: 0 auto;
@@ -43,14 +45,19 @@ export const ProjectsGrid = styled.div`
 
 export const ProjectCard = styled.div<{ isVisible: boolean; delay: number }>`
   background-color: ${({ theme }) => theme.background};
-  border-radius: 0.75rem;
+  border-radius: 1.125rem;
   overflow: hidden;
   border: 1px solid ${({ theme }) => theme.border};
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   transform: ${({ isVisible }) => (isVisible ? "translateY(0)" : "translateY(20px)")};
-  transition: all 0.5s ease;
+  transition: all 0.5s ease, box-shadow 0.3s ease;
   transition-delay: ${({ delay }) => `${delay * 0.1}s`};
+
+  &:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+    border-color: ${({ theme }) => theme.primary}44;
+  }
 `
 
 export const ProjectImage = styled.div`
@@ -63,14 +70,18 @@ export const ProjectContent = styled.div`
 `
 
 export const ProjectTitle = styled.h3`
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-family: var(--font-display, 'DM Serif Display', Georgia, serif);
+  font-size: 1.375rem;
+  font-weight: 400;
   margin-bottom: 0.5rem;
 `
 
 export const ProjectDescription = styled.p`
+  font-size: 0.875rem;
+  font-weight: 400;
   color: ${({ theme }) => theme.muted};
   margin-bottom: 1rem;
+  line-height: 1.65;
 `
 
 export const TagsContainer = styled.div`
@@ -82,12 +93,16 @@ export const TagsContainer = styled.div`
 
 export const Tag = styled.span`
   font-size: 0.75rem;
-  padding: 0.25rem 0.5rem;
+  font-weight: 400;
+  font-family: var(--font-sans, 'Outfit', sans-serif);
+  padding: 0.25rem 0.625rem;
   border-radius: 9999px;
   background-color: ${({ theme }) => theme.secondary};
+  border: 1px solid ${({ theme }) => theme.border};
+  color: ${({ theme }) => theme.foreground};
 `
 
 export const ButtonGroup = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
 `

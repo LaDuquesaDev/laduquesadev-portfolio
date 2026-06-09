@@ -1,8 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { useLanguage } from "./useLanguage"
 import { photos } from "@/mocks"
+import { useLanguage } from "./useLanguage"
 
 export const usePhotoGallery = () => {
   const { t } = useLanguage()

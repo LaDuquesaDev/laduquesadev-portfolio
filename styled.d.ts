@@ -5,6 +5,7 @@ declare module "styled-components" {
       background: string
       foreground: string
       primary: string
+      primaryForeground: string
       secondary: string
       muted: string
       border: string
