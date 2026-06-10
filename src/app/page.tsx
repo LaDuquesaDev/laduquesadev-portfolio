@@ -1,10 +1,12 @@
 "use client"
 
 import { useEffect } from "react"
+import { About } from "@/components/About"
 import { Footer } from "@/components/Footer"
 import { Header } from "@/components/Header"
 import { Hero } from "@/components/Hero"
 import { PhotoGallery } from "@/components/PhotoGallery"
+import { PixelFox } from "@/components/PixelFox"
 import { Products } from "@/components/Products"
 
 export default function Home() {
@@ -19,9 +21,11 @@ export default function Home() {
     <main>
       <Header />
       <Hero />
+      <About />
       <Products />
       <PhotoGallery />
       <Footer />
+      <PixelFox />
     </main>
   )
 }
