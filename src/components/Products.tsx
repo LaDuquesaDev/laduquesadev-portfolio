@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useLanguage } from "@/hooks/useLanguage"
 import {
   ProductsSection,
   ProductsContainer,
@@ -27,6 +28,7 @@ import {
 } from "@/styles/products-styles"
 
 export const Products = () => {
+  const { t } = useLanguage()
   const [isLoading, setIsLoading] = useState(false)
 
   const handleBuy = async () => {
@@ -41,10 +43,10 @@ export const Products = () => {
       if (data.url) {
         window.location.href = data.url
       } else {
-        alert("Error al iniciar el pago. Inténtalo de nuevo.")
+        alert(t("products.errorPayment"))
       }
     } catch {
-      alert("Error al conectar con el servidor de pagos.")
+      alert(t("products.errorServer"))
     } finally {
       setIsLoading(false)
     }
@@ -54,11 +56,9 @@ export const Products = () => {
     <ProductsSection id="products">
       <ProductsContainer>
         <ProductsHeader>
-          <ProductsLabel>Productos digitales</ProductsLabel>
-          <ProductsTitle>Lo que he aprendido,<br />ahora está en tus manos</ProductsTitle>
-          <ProductsSubtitle>
-            Guías prácticas basadas en mi experiencia real publicando apps en producción.
-          </ProductsSubtitle>
+          <ProductsLabel>{t("products.label")}</ProductsLabel>
+          <ProductsTitle>{t("products.title").split("\n").map((line, i) => i === 0 ? <>{line}<br /></> : line)}</ProductsTitle>
+          <ProductsSubtitle>{t("products.subtitle")}</ProductsSubtitle>
         </ProductsHeader>
 
         <ProductCard>
@@ -66,31 +66,29 @@ export const Products = () => {
             <BookCover>
               <BookEmoji>📱</BookEmoji>
               <BookTitleText>
-                <h3>De cero a las tiendas</h3>
-                <p>por Yulimar Duque</p>
+                <h3>{t("products.bookTitle")}</h3>
+                <p>{t("products.bookAuthor")}</p>
               </BookTitleText>
             </BookCover>
           </BookMockup>
 
           <ProductInfo>
-            <ProductBadge>Guía digital · PDF</ProductBadge>
-            <ProductTitle>De cero a las tiendas</ProductTitle>
-            <ProductDescription>
-              Todo lo que necesitas saber para publicar tu app en App Store y Google Play — sin morir en el intento. Paso a paso, con capturas reales y los errores que cometí para que tú no los cometas.
-            </ProductDescription>
+            <ProductBadge>{t("products.badge")}</ProductBadge>
+            <ProductTitle>{t("products.bookTitle")}</ProductTitle>
+            <ProductDescription>{t("products.description")}</ProductDescription>
 
             <ProductFeatures>
-              <ProductFeatureItem>Configuración de App Store Connect y Google Play Console</ProductFeatureItem>
-              <ProductFeatureItem>EAS Build: builds de producción con Expo</ProductFeatureItem>
-              <ProductFeatureItem>Certificados, provisioning profiles y firmas de APK</ProductFeatureItem>
-              <ProductFeatureItem>TestFlight y pruebas internas antes del lanzamiento</ProductFeatureItem>
-              <ProductFeatureItem>Checklist de revisión antes de publicar</ProductFeatureItem>
-              <ProductFeatureItem>Errores comunes y cómo resolverlos</ProductFeatureItem>
+              <ProductFeatureItem>{t("products.feature1")}</ProductFeatureItem>
+              <ProductFeatureItem>{t("products.feature2")}</ProductFeatureItem>
+              <ProductFeatureItem>{t("products.feature3")}</ProductFeatureItem>
+              <ProductFeatureItem>{t("products.feature4")}</ProductFeatureItem>
+              <ProductFeatureItem>{t("products.feature5")}</ProductFeatureItem>
+              <ProductFeatureItem>{t("products.feature6")}</ProductFeatureItem>
             </ProductFeatures>
 
             <ProductPricing>
               <ProductPrice>$19 USD</ProductPrice>
-              <ProductPriceNote>Acceso inmediato · Descarga PDF</ProductPriceNote>
+              <ProductPriceNote>{t("products.priceNote")}</ProductPriceNote>
             </ProductPricing>
 
             <BuyButton onClick={handleBuy} disabled={isLoading}>
@@ -99,11 +97,11 @@ export const Products = () => {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ animation: "spin 1s linear infinite" }}>
                     <path d="M21 12a9 9 0 1 1-6.219-8.56" />
                   </svg>
-                  Procesando...
+                  {t("products.processing")}
                 </>
               ) : (
                 <>
-                  Comprar ahora — $19 USD
+                  {t("products.buyButton")}
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
@@ -116,7 +114,7 @@ export const Products = () => {
                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
                 <path d="M7 11V7a5 5 0 0 1 10 0v4" />
               </svg>
-              Pago seguro con Stripe · No almacenamos datos de tu tarjeta
+              {t("products.secureNote")}
             </SecureNote>
           </ProductInfo>
         </ProductCard>

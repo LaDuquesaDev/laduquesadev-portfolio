@@ -32,7 +32,7 @@ export const About = () => {
     <AboutSection id="about" ref={sectionRef}>
       <AboutContainer>
         <SectionHeader style={{ opacity: isHeaderVisible ? 1 : 0, transform: isHeaderVisible ? "translateY(0)" : "translateY(20px)", transition: "all 0.5s ease" }}>
-          <SectionLabel>Sobre mí</SectionLabel>
+          <SectionLabel>{t("about.sectionLabel")}</SectionLabel>
           <SectionTitle>{t("about.title")}</SectionTitle>
         </SectionHeader>
 
@@ -41,7 +41,7 @@ export const About = () => {
             <AboutBio>{t("about.bio1")}</AboutBio>
             <AboutBio>{t("about.bio2")}</AboutBio>
 
-            <AboutTagsLabel>Stack actual</AboutTagsLabel>
+            <AboutTagsLabel>{t("about.stackLabel")}</AboutTagsLabel>
             <SkillTags>
               {skills.map((skill) => (
                 <SkillTag key={skill}>{skill}</SkillTag>
@@ -52,15 +52,15 @@ export const About = () => {
           <AboutAside>
             <StatCard>
               <StatNumber>+4</StatNumber>
-              <StatLabel>años construyendo apps móviles de cero a producción</StatLabel>
+              <StatLabel>{t("about.stat1Label")}</StatLabel>
             </StatCard>
             <StatCard>
               <StatNumber>2</StatNumber>
-              <StatLabel>apps lanzadas en App Store y Google Play con ownership completo</StatLabel>
+              <StatLabel>{t("about.stat2Label")}</StatLabel>
             </StatCard>
             <StatCard>
               <StatNumber>∞</StatNumber>
-              <StatLabel>ganas de seguir aprendiendo y compartiendo lo aprendido</StatLabel>
+              <StatLabel>{t("about.stat3Label")}</StatLabel>
             </StatCard>
           </AboutAside>
         </AboutGrid>

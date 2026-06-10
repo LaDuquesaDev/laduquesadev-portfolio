@@ -17,14 +17,35 @@
     "resume": "Download CV"
   },
   "about": {
+    "sectionLabel": "About me",
     "title": "The person behind the code",
     "bio1": "I'm a React Native developer with 4+ years building mobile apps. I've led the full development cycle — from architecture decisions and feature development, to setting up EAS Build, managing App Store Connect and Google Play Console, and shipping real products to production.",
-    "bio2": "I'm passionate about sharing what I learn. Beyond building, I create technical content and practical guides so other developers can shorten their learning curve — especially around the app store publishing process, which is often more complex than it seems."
+    "bio2": "I'm passionate about sharing what I learn. Beyond building, I create technical content and practical guides so other developers can shorten their learning curve — especially around the app store publishing process, which is often more complex than it seems.",
+    "stackLabel": "Current stack",
+    "stat1Label": "years building mobile apps from zero to production",
+    "stat2Label": "apps shipped to App Store and Google Play with full ownership",
+    "stat3Label": "drive to keep learning and sharing what I learn"
   },
   "products": {
     "label": "Digital products",
-    "title": "What I learned,\nnow in your hands",
-    "subtitle": "Practical guides based on my real experience shipping apps to production."
+    "title": "What I've learned,\nnow in your hands",
+    "subtitle": "Practical guides based on my real experience shipping apps to production.",
+    "bookTitle": "Zero to the Stores",
+    "bookAuthor": "by Yulimar Duque",
+    "badge": "Digital guide · PDF",
+    "description": "Everything you need to know to publish your app on the App Store and Google Play — without losing your mind. Step by step, with real screenshots and the mistakes I made so you don't have to.",
+    "feature1": "App Store Connect and Google Play Console setup",
+    "feature2": "EAS Build: production builds with Expo",
+    "feature3": "Certificates, provisioning profiles and APK signing",
+    "feature4": "TestFlight and internal testing before launch",
+    "feature5": "Pre-publish review checklist",
+    "feature6": "Common errors and how to fix them",
+    "priceNote": "Immediate access · PDF download",
+    "buyButton": "Buy now — $19 USD",
+    "processing": "Processing...",
+    "secureNote": "Secure payment with Stripe · We don't store your card data",
+    "errorPayment": "Error starting payment. Please try again.",
+    "errorServer": "Error connecting to the payment server."
   },
   "projects": {
     "title": "Projects",
@@ -32,7 +53,7 @@
   },
   "gallery": {
     "title": "Talks & Events",
-    "subtitle": "Moments from conferences and meetups where I've spoken about mobile development"
+    "subtitle": "Moments from conferences and meetups where I've shared my knowledge with the developer community in Medellín"
   },
   "contact": {
     "title": "Contact",
