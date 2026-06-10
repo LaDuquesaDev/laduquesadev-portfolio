@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import { useFooter } from "@/hooks/useFooter"
 import {
   Copyright,
@@ -32,10 +31,10 @@ export const Footer = () => {
           <FooterSection>
             <FooterHeading>{t("footer.navigation")}</FooterHeading>
             <FooterNav>
-              <FooterLink href="/#about">{t("nav.about")}</FooterLink>
               <FooterLink href="/#products">{t("nav.products")}</FooterLink>
               <FooterLink href="/#gallery">{t("nav.gallery")}</FooterLink>
-              <FooterLink href="/portfolio">{t("nav.portfolio")}</FooterLink>
+              <FooterLink href="/bio">{t("nav.about")}</FooterLink>
+              {/* <FooterLink href="/portfolio">{t("nav.portfolio")}</FooterLink> */}
             </FooterNav>
           </FooterSection>
 

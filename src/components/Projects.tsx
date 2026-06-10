@@ -3,7 +3,7 @@
 import type React from "react"
 import Image from "next/image"
 import { useProjects } from "@/hooks/useProjects"
-import { ButtonGroup, ProjectCard, ProjectContent, ProjectDescription, ProjectImage, ProjectsContainer, ProjectsGrid, ProjectsSection, ProjectTitle, SectionHeader, SectionSubtitle, SectionTitle, Tag, TagsContainer } from "@/styles/projects-styles"
+import { ButtonGroup, ProjectCard, ProjectContent, ProjectDescription, ProjectImage, ProjectsContainer, ProjectsGrid, ProjectsSection, ProjectTitle, Tag, TagsContainer } from "@/styles/projects-styles"
 import { projects } from "@/mocks"
 
 export const Projects = () => {
