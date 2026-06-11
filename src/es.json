@@ -17,14 +17,35 @@
     "resume": "Descargar CV"
   },
   "about": {
+    "sectionLabel": "Sobre mí",
     "title": "La persona detrás del código",
     "bio1": "Soy desarrolladora React Native con más de 4 años construyendo aplicaciones móviles. He liderado el ciclo completo de desarrollo — desde decisiones de arquitectura y desarrollo de features, hasta configurar EAS Build, gestionar App Store Connect y Google Play Console, y lanzar productos reales en producción.",
-    "bio2": "Me apasiona compartir lo que aprendo. Por eso además de construir, creo contenido técnico y guías prácticas para que otros desarrolladores puedan acortar su curva de aprendizaje — especialmente en el proceso de publicación en tiendas, que suele ser más complejo de lo que parece."
+    "bio2": "Me apasiona compartir lo que aprendo. Por eso además de construir, creo contenido técnico y guías prácticas para que otros desarrolladores puedan acortar su curva de aprendizaje — especialmente en el proceso de publicación en tiendas, que suele ser más complejo de lo que parece.",
+    "stackLabel": "Stack actual",
+    "stat1Label": "años construyendo apps móviles de cero a producción",
+    "stat2Label": "apps lanzadas en App Store y Google Play con ownership completo",
+    "stat3Label": "ganas de seguir aprendiendo y compartiendo lo aprendido"
   },
   "products": {
     "label": "Productos digitales",
-    "title": "Lo que aprendí,\nahora en tus manos",
-    "subtitle": "Guías prácticas basadas en mi experiencia real publicando apps en producción."
+    "title": "Lo que he aprendido,\nahora está en tus manos",
+    "subtitle": "Guías prácticas basadas en mi experiencia real publicando apps en producción.",
+    "bookTitle": "De cero a las tiendas",
+    "bookAuthor": "por Yulimar Duque",
+    "badge": "Guía digital · PDF",
+    "description": "Todo lo que necesitas saber para publicar tu app en App Store y Google Play — sin morir en el intento. Paso a paso, con capturas reales y los errores que cometí para que tú no los cometas.",
+    "feature1": "Configuración de App Store Connect y Google Play Console",
+    "feature2": "EAS Build: builds de producción con Expo",
+    "feature3": "Certificados, provisioning profiles y firmas de APK",
+    "feature4": "TestFlight y pruebas internas antes del lanzamiento",
+    "feature5": "Checklist de revisión antes de publicar",
+    "feature6": "Errores comunes y cómo resolverlos",
+    "priceNote": "Acceso inmediato · Descarga PDF",
+    "buyButton": "Comprar ahora — $19 USD",
+    "processing": "Procesando...",
+    "secureNote": "Pago seguro con Stripe · No almacenamos datos de tu tarjeta",
+    "errorPayment": "Error al iniciar el pago. Inténtalo de nuevo.",
+    "errorServer": "Error al conectar con el servidor de pagos."
   },
   "projects": {
     "title": "Proyectos",
@@ -32,7 +53,7 @@
   },
   "gallery": {
     "title": "Charlas & Eventos",
-    "subtitle": "Momentos de conferencias y meetups donde he hablado sobre desarrollo móvil"
+    "subtitle": "Momentos de conferencias y meetups donde he compartido mis conocimientos con la comunidad de desarrolladores en Medellín"
   },
   "contact": {
     "title": "Contacto",

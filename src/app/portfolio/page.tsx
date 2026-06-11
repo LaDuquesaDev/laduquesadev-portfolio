@@ -1,7 +1,6 @@
 'use client';
 
 import {Projects} from '@/components/Projects';
-import {PhotoGallery} from '@/components/PhotoGallery';
 import {Footer} from '@/components/Footer';
 import Link from 'next/link';
 import styled from 'styled-components';
@@ -19,14 +18,6 @@ const PortfolioHeader = styled.header`
   background: ${({theme}) => theme.background}ee;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid ${({theme}) => theme.border};
-`;
-
-const LogoLink = styled(Link)`
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: ${({theme}) => theme.primary};
-  text-decoration: none;
-  letter-spacing: -0.02em;
 `;
 
 const BackLink = styled(Link)`

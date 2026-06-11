@@ -1,20 +1,16 @@
 import styled, { keyframes } from "styled-components"
 
-const shimmer = keyframes`
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
-`
-
 const float = keyframes`
   0%, 100% { transform: translateY(0px) rotate(-2deg); }
   50% { transform: translateY(-12px) rotate(-2deg); }
 `
 
 export const ProductsSection = styled.section`
-  padding: 5rem 0;
+  padding: 6rem 0;
   position: relative;
   overflow: hidden;
   background-color: ${({ theme }) => `${theme.secondary}80`};
+  border-bottom: 1px solid ${({ theme }) => theme.border};
 
   &::before {
     content: '';
@@ -23,8 +19,8 @@ export const ProductsSection = styled.section`
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(ellipse at 20% 50%, rgba(245,158,11,0.12) 0%, transparent 60%),
-                radial-gradient(ellipse at 80% 50%, rgba(196,136,30,0.06) 0%, transparent 60%);
+    background: radial-gradient(ellipse at 15% 60%, rgba(245,158,11,0.10) 0%, transparent 55%),
+                radial-gradient(ellipse at 85% 40%, rgba(196,136,30,0.06) 0%, transparent 55%);
     pointer-events: none;
   }
 `

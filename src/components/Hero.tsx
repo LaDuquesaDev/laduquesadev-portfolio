@@ -5,6 +5,7 @@ import Image from "next/image"
 import { useHero } from "@/hooks/useHero"
 import {
   HeroSection,
+  HeroDotGrid,
   HeroContainer,
   HeroContent,
   HeroLabel,
@@ -12,7 +13,6 @@ import {
   HeroSubtitle,
   ButtonGroup,
   PrimaryButton,
-  SecondaryButton,
   HeroSocials,
   SocialIconLink,
   HeroImageContainer,
@@ -26,6 +26,7 @@ export const Hero = () => {
 
   return (
     <HeroSection>
+      <HeroDotGrid />
       <HeroContainer>
         <HeroContent>
           <HeroLabel>
@@ -46,9 +47,6 @@ export const Hero = () => {
             <PrimaryButton as="a" href="#products">
               {t("hero.cta_products")}
             </PrimaryButton>
-            <SecondaryButton as="a" href="/portfolio">
-              {t("hero.cta_portfolio")}
-            </SecondaryButton>
           </ButtonGroup>
 
           <HeroSocials>

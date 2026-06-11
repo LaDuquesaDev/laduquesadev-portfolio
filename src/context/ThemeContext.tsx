@@ -13,23 +13,25 @@ interface ThemeContextType {
 }
 
 const lightTheme = {
-  background: "#FFFBF2",
+  background: "#F6ECD9",
+  backgroundAlt: "#EDDABB",
   foreground: "#1C1410",
   primary: "#C4881E",
   primaryForeground: "#ffffff",
-  secondary: "#FEF3C7",
+  secondary: "#FAF0D0",
   muted: "#78716C",
-  border: "#E8D9B8",
+  border: "#DFC9A5",
 }
 
 const darkTheme = {
-  background: "#0C0802",
+  background: "#1d1d1d",
+  backgroundAlt: "#41403e",
   foreground: "#F5F0E8",
   primary: "#FBBF24",
   primaryForeground: "#1C1410",
-  secondary: "#1A1208",
-  muted: "#A87D4A",
-  border: "#2D1F0A",
+  secondary: "#303030",
+  muted: "#9A9A9A",
+  border: "#404040",
 }
 
 const GlobalStyle = createGlobalStyle<{ theme: typeof lightTheme }>`
