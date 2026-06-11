@@ -7,7 +7,6 @@ import { Header } from "@/components/Header"
 import { Hero } from "@/components/Hero"
 import { PhotoGallery } from "@/components/PhotoGallery"
 import { PixelFox } from "@/components/PixelFox"
-import { Products } from "@/components/Products"
 
 export default function Home() {
   useEffect(() => {
@@ -22,7 +21,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Products />
+      {/* <Products /> */}
       <PhotoGallery />
       <Footer />
       <PixelFox />

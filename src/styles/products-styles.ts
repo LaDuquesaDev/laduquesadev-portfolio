@@ -1,10 +1,5 @@
 import styled, { keyframes } from "styled-components"
 
-const shimmer = keyframes`
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
-`
-
 const float = keyframes`
   0%, 100% { transform: translateY(0px) rotate(-2deg); }
   50% { transform: translateY(-12px) rotate(-2deg); }

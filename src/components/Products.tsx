@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import { useLanguage } from "@/hooks/useLanguage"
 import {
   ProductsSection,
@@ -27,30 +26,13 @@ import {
   SecureNote,
 } from "@/styles/products-styles"
 
-export const Products = () => {
-  const { t } = useLanguage()
-  const [isLoading, setIsLoading] = useState(false)
+const CHECKOUT_URLS = {
+  es: "https://laduquesadev.lemonsqueezy.com/checkout/buy/[id-es]",
+  en: "https://laduquesadev.lemonsqueezy.com/checkout/buy/[id-en]",
+}
 
-  const handleBuy = async () => {
-    setIsLoading(true)
-    try {
-      const res = await fetch("/api/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({}),
-      })
-      const data = await res.json()
-      if (data.url) {
-        window.location.href = data.url
-      } else {
-        alert(t("products.errorPayment"))
-      }
-    } catch {
-      alert(t("products.errorServer"))
-    } finally {
-      setIsLoading(false)
-    }
-  }
+export const Products = () => {
+  const { t, language } = useLanguage()
 
   return (
     <ProductsSection id="products">
@@ -91,27 +73,16 @@ export const Products = () => {
               <ProductPriceNote>{t("products.priceNote")}</ProductPriceNote>
             </ProductPricing>
 
-            <BuyButton onClick={handleBuy} disabled={isLoading}>
-              {isLoading ? (
-                <>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ animation: "spin 1s linear infinite" }}>
-                    <path d="M21 12a9 9 0 1 1-6.219-8.56" />
-                  </svg>
-                  {t("products.processing")}
-                </>
-              ) : (
-                <>
-                  {t("products.buyButton")}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </>
-              )}
+            <BuyButton onClick={() => { window.location.href = CHECKOUT_URLS[language] }}>
+              {t("products.buyButton")}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
             </BuyButton>
 
             <SecureNote>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                <path d="M3 13a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7z" />
                 <path d="M7 11V7a5 5 0 0 1 10 0v4" />
               </svg>
               {t("products.secureNote")}
