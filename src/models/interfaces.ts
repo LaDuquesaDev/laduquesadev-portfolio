@@ -2,10 +2,14 @@ export interface Project {
   id: number
   title: string
   description: string
-  image: string
+  description_es: string
+  image: string | null
+  emoji?: string
   technologies: string[]
-  github: string
-  demo: string | null
+  github?: string | null
+  demo?: string | null
+  ios?: string | null
+  android?: string | null
 }
 
 export interface PhotoGallery {

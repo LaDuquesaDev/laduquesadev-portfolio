@@ -11,7 +11,7 @@
     "greeting": "Hola, soy",
     "name": "Yulimar Duque",
     "description": "Construyo apps móviles de cero a producción. React Native Developer con +4 años de experiencia llevando proyectos del código a las tiendas — App Store y Google Play.",
-    "cta_products": "Ver productos",
+    "cta_projects": "Ver proyectos",
     "cta_portfolio": "Ver portfolio →",
     "contact": "Contáctame",
     "resume": "Descargar CV"
@@ -48,8 +48,13 @@
     "errorServer": "Error al conectar con el servidor de pagos."
   },
   "projects": {
-    "title": "Proyectos",
-    "subtitle": "Una selección de proyectos personales y de clientes"
+    "label": "Portfolio",
+    "title": "Apps que he construido",
+    "subtitle": "Una selección de proyectos llevados a producción y open source",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "github": "GitHub",
+    "liveDemo": "Demo"
   },
   "gallery": {
     "title": "Charlas & Eventos",

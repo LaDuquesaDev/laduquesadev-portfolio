@@ -11,7 +11,7 @@
     "greeting": "Hi, I'm",
     "name": "Yulimar Duque",
     "description": "I build mobile apps from zero to production. React Native Developer with 4+ years shipping products to App Store and Google Play.",
-    "cta_products": "See products",
+    "cta_projects": "See projects",
     "cta_portfolio": "View portfolio →",
     "contact": "Get in touch",
     "resume": "Download CV"
@@ -48,8 +48,13 @@
     "errorServer": "Error connecting to the payment server."
   },
   "projects": {
-    "title": "Projects",
-    "subtitle": "A selection of personal and client projects"
+    "label": "Portfolio",
+    "title": "Apps I've built",
+    "subtitle": "A selection of projects shipped to production and open source",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "github": "GitHub",
+    "liveDemo": "Live Demo"
   },
   "gallery": {
     "title": "Talks & Events",
