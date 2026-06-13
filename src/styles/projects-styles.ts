@@ -83,13 +83,13 @@ export const ProjectCard = styled.div<{ isVisible: boolean; delay: number }>`
   }
 `
 
-export const ProjectImageArea = styled.div<{ hasEmoji?: boolean }>`
+export const ProjectImageArea = styled.div<{ $hasEmoji?: boolean }>`
   position: relative;
   height: 180px;
   margin: 0.875rem 0.875rem 0;
   border-radius: 0.75rem;
-  background: ${({ theme, hasEmoji }) =>
-    hasEmoji
+  background: ${({ theme, $hasEmoji }) =>
+    $hasEmoji
       ? `linear-gradient(135deg, ${theme.secondary} 0%, ${theme.border} 100%)`
       : theme.secondary};
   display: flex;

@@ -40,16 +40,18 @@ export const Projects = () => {
         <ProjectsGrid>
           {projects.map((project, index) => (
             <ProjectCard key={project.id} isVisible={isProjectsVisible} delay={index}>
-              <ProjectImageArea hasEmoji={!!project.emoji}>
+              <ProjectImageArea $hasEmoji={!!project.emoji}>
                 {project.emoji ? (
                   <ProjectEmoji>{project.emoji}</ProjectEmoji>
                 ) : project.image ? (
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    style={{ objectFit: "contain", padding: "1.5rem" }}
-                  />
+                  <div style={{ position: "relative", width: "calc(100% - 3rem)", height: "calc(100% - 3rem)", borderRadius: "0.5rem", overflow: "hidden" }}>
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
                 ) : null}
               </ProjectImageArea>
 
