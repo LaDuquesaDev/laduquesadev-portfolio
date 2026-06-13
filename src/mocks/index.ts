@@ -16,7 +16,7 @@ export const projects: Project[] = [
     title: "Ruedata",
     description: "Integrated tire data management platform that delivers key performance indicators and action plans to maximize fleet efficiency and productivity.",
     description_es: "Plataforma integral de gestión de datos de neumáticos que entrega indicadores clave y planes de acción para maximizar la eficiencia y productividad de la flota.",
-    image: "/ruedata.webp",
+    image: "/ruedata.svg",
     technologies: ["React Native", "TypeScript"],
     android: "https://play.google.com/store/apps/details?id=com.ruemobile&hl=es_419",
   },

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Círculo exterior dorado -->
+  <circle cx="50" cy="50" r="48" fill="#FAF6F0" stroke="#C4873A" stroke-width="2.5"/>
+  <!-- Diamante grande (beige claro) -->
+  <rect x="22" y="22" width="56" height="56" rx="2" fill="#EDE3D3" transform="rotate(45 50 50)"/>
+  <!-- Diamante mediano (beige medio) -->
+  <rect x="30" y="30" width="40" height="40" rx="2" fill="#D9C9B0" transform="rotate(45 50 50)"/>
+  <!-- Diamante pequeño (dorado) -->
+  <rect x="36" y="36" width="28" height="28" rx="2" fill="#C4873A" transform="rotate(45 50 50)"/>
+</svg>
