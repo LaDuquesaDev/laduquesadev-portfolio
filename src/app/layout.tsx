@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yulimar Duque",
+  title: "LaDuquesaDev",
   description: "React Native Developer · Construyo apps móviles de cero a producción y comparto lo que aprendo.",
 };
 
