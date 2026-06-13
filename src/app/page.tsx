@@ -7,6 +7,7 @@ import { Header } from "@/components/Header"
 import { Hero } from "@/components/Hero"
 import { PhotoGallery } from "@/components/PhotoGallery"
 import { PixelFox } from "@/components/PixelFox"
+import { Products } from "@/components/Products"
 import { Projects } from "@/components/Projects"
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
+      <Products />
       <PhotoGallery />
       <Footer />
       <PixelFox />

@@ -27,8 +27,8 @@ import {
 } from "@/styles/products-styles"
 
 const CHECKOUT_URLS = {
-  es: "https://laduquesadev.lemonsqueezy.com/checkout/buy/[id-es]",
-  en: "https://laduquesadev.lemonsqueezy.com/checkout/buy/[id-en]",
+  es: "https://laduquesadev.lemonsqueezy.com/checkout/buy/04d8de98-53d8-4177-94e0-cb68b19497fc",
+  en: "https://laduquesadev.lemonsqueezy.com/checkout/buy/a6e896f4-4f54-443a-a298-74040ef9f120",
 }
 
 export const Products = () => {

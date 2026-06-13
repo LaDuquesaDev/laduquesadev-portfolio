@@ -32,6 +32,7 @@ export const Header = () => {
         <DesktopNav>
           <NavLinks>
             <NavLink href="/#projects">{t("nav.portfolio")}</NavLink>
+            <NavLink href="/#products">{t("nav.products")}</NavLink>
             <NavLink href="/#gallery">{t("nav.gallery")}</NavLink>
             <NavLink href="/#about">{t("nav.about")}</NavLink>
           </NavLinks>
@@ -63,6 +64,7 @@ export const Header = () => {
         <MobileMenu>
           <MobileNavLinks>
             <MobileNavLink href="/#projects" onClick={toggleMobileMenu}>{t("nav.portfolio")}</MobileNavLink>
+            <MobileNavLink href="/#products" onClick={toggleMobileMenu}>{t("nav.products")}</MobileNavLink>
             <MobileNavLink href="/#gallery" onClick={toggleMobileMenu}>{t("nav.gallery")}</MobileNavLink>
             <MobileNavLink href="/#about" onClick={toggleMobileMenu}>{t("nav.about")}</MobileNavLink>
             {/* <MobileNavLink href="/portfolio" onClick={toggleMobileMenu}>{t("nav.portfolio")}</MobileNavLink> */}
