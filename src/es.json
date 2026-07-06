@@ -21,10 +21,7 @@
     "title": "La persona detrás del código",
     "bio1": "Soy desarrolladora React Native con más de 4 años construyendo aplicaciones móviles. He liderado el ciclo completo de desarrollo — desde decisiones de arquitectura y desarrollo de features, hasta configurar EAS Build, gestionar App Store Connect y Google Play Console, y lanzar productos reales en producción.",
     "bio2": "Me apasiona compartir lo que aprendo. Por eso además de construir, creo contenido técnico y guías prácticas para que otros desarrolladores puedan acortar su curva de aprendizaje — especialmente en el proceso de publicación en tiendas, que suele ser más complejo de lo que parece.",
-    "stackLabel": "Stack actual",
-    "stat1Label": "años construyendo apps móviles de cero a producción",
-    "stat2Label": "apps lanzadas en App Store y Google Play con ownership completo",
-    "stat3Label": "ganas de seguir aprendiendo y compartiendo lo aprendido"
+    "stackLabel": "Stack actual"
   },
   "products": {
     "label": "Productos digitales",

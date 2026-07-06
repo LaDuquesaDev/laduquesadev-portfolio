@@ -21,10 +21,7 @@
     "title": "The person behind the code",
     "bio1": "I'm a React Native developer with 4+ years building mobile apps. I've led the full development cycle — from architecture decisions and feature development, to setting up EAS Build, managing App Store Connect and Google Play Console, and shipping real products to production.",
     "bio2": "I'm passionate about sharing what I learn. Beyond building, I create technical content and practical guides so other developers can shorten their learning curve — especially around the app store publishing process, which is often more complex than it seems.",
-    "stackLabel": "Current stack",
-    "stat1Label": "years building mobile apps from zero to production",
-    "stat2Label": "apps shipped to App Store and Google Play with full ownership",
-    "stat3Label": "drive to keep learning and sharing what I learn"
+    "stackLabel": "Current stack"
   },
   "products": {
     "label": "Digital products",

@@ -13,10 +13,6 @@ import {
   AboutTagsLabel,
   SkillTags,
   SkillTag,
-  AboutAside,
-  StatCard,
-  StatNumber,
-  StatLabel,
 } from "@/styles/about-styles"
 
 const skills = [
@@ -48,21 +44,6 @@ export const About = () => {
               ))}
             </SkillTags>
           </AboutText>
-
-          <AboutAside>
-            <StatCard>
-              <StatNumber>+4</StatNumber>
-              <StatLabel>{t("about.stat1Label")}</StatLabel>
-            </StatCard>
-            <StatCard>
-              <StatNumber>2</StatNumber>
-              <StatLabel>{t("about.stat2Label")}</StatLabel>
-            </StatCard>
-            <StatCard>
-              <StatNumber>∞</StatNumber>
-              <StatLabel>{t("about.stat3Label")}</StatLabel>
-            </StatCard>
-          </AboutAside>
         </AboutGrid>
       </AboutContainer>
     </AboutSection>
