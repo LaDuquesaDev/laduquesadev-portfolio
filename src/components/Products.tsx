@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react"
 import { useLanguage } from "@/hooks/useLanguage"
 import {
   ProductsSection,
@@ -27,8 +28,8 @@ import {
 } from "@/styles/products-styles"
 
 const CHECKOUT_URLS = {
-  es: "https://laduquesadev.lemonsqueezy.com/checkout/buy/[id-es]",
-  en: "https://laduquesadev.lemonsqueezy.com/checkout/buy/[id-en]",
+  es: "https://laduquesadev.lemonsqueezy.com/checkout/buy/1783868",
+  en: "https://laduquesadev.lemonsqueezy.com/checkout/buy/1783914",
 }
 
 export const Products = () => {
@@ -39,7 +40,7 @@ export const Products = () => {
       <ProductsContainer>
         <ProductsHeader>
           <ProductsLabel>{t("products.label")}</ProductsLabel>
-          <ProductsTitle>{t("products.title").split("\n").map((line, i) => i === 0 ? <>{line}<br /></> : line)}</ProductsTitle>
+          <ProductsTitle>{t("products.title").split("\n").map((line, i) => i === 0 ? <React.Fragment key={i}>{line}<br /></React.Fragment> : line)}</ProductsTitle>
           <ProductsSubtitle>{t("products.subtitle")}</ProductsSubtitle>
         </ProductsHeader>
 

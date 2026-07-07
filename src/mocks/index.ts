@@ -8,7 +8,8 @@ export const projects: Project[] = [
     description_es: "App para aprender inglés que hace la práctica intuitiva y divertida — lecciones interactivas, construcción de vocabulario y seguimiento del progreso en tiempo real para hispanohablantes.",
     image: "/papora.webp",
     technologies: ["React Native", "TypeScript", "Expo"],
-    ios: "https://apps.apple.com/co/app/papora-aprende-ingl%C3%A9s/id6760311437",
+    ios: "https://apps.apple.com/us/app/papora-learn-english/id6760311437",
+    ios_es: "https://apps.apple.com/co/app/papora-aprende-ingl%C3%A9s/id6760311437",
     android: "https://play.google.com/store/apps/details?id=com.papora.mobile&hl",
   },
   {

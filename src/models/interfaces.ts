@@ -9,6 +9,7 @@ export interface Project {
   github?: string | null
   demo?: string | null
   ios?: string | null
+  ios_es?: string | null
   android?: string | null
 }
 
