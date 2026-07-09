@@ -44,7 +44,7 @@ export const Hero = () => {
           <HeroSubtitle>{t("hero.description")}</HeroSubtitle>
 
           <ButtonGroup>
-            <PrimaryButton as="a" href="#projects">
+            <PrimaryButton as="a" href="#products">
               {t("hero.cta_projects")}
             </PrimaryButton>
           </ButtonGroup>

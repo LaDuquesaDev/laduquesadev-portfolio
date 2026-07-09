@@ -34,6 +34,7 @@ export const Header = () => {
             <NavLink href="/#projects">{t("nav.portfolio")}</NavLink>
             <NavLink href="/#gallery">{t("nav.gallery")}</NavLink>
             <NavLink href="/#about">{t("nav.about")}</NavLink>
+            <NavLink href="/#products">{t("nav.products")}</NavLink>
           </NavLinks>
 
           <ActionButtons>
@@ -65,6 +66,7 @@ export const Header = () => {
             <MobileNavLink href="/#projects" onClick={toggleMobileMenu}>{t("nav.portfolio")}</MobileNavLink>
             <MobileNavLink href="/#gallery" onClick={toggleMobileMenu}>{t("nav.gallery")}</MobileNavLink>
             <MobileNavLink href="/#about" onClick={toggleMobileMenu}>{t("nav.about")}</MobileNavLink>
+            <MobileNavLink href="/#products" onClick={toggleMobileMenu}>{t("nav.products")}</MobileNavLink>
             {/* <MobileNavLink href="/portfolio" onClick={toggleMobileMenu}>{t("nav.portfolio")}</MobileNavLink> */}
             <MobileActions>
               <ThemeToggle />

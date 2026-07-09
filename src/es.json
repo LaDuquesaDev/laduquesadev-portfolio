@@ -11,7 +11,7 @@
     "greeting": "Hola, soy",
     "name": "Yulimar Duque",
     "description": "Construyo apps móviles de cero a producción. React Native Developer con +4 años de experiencia llevando proyectos del código a las tiendas — App Store y Google Play.",
-    "cta_projects": "Ver proyectos",
+    "cta_projects": "Ver productos",
     "cta_portfolio": "Ver portfolio →",
     "contact": "Contáctame",
     "resume": "Descargar CV"
@@ -38,11 +38,9 @@
     "feature5": "Checklist de revisión antes de publicar",
     "feature6": "Errores comunes y cómo resolverlos",
     "priceNote": "Acceso inmediato · Descarga PDF",
+    "donationNote": "Con tu compra también contribuyes a apoyar a los afectados por los terremotos en Venezuela 🇻🇪",
     "buyButton": "Comprar ahora — $19 USD",
-    "processing": "Procesando...",
-    "secureNote": "Pago seguro con Stripe · No almacenamos datos de tu tarjeta",
-    "errorPayment": "Error al iniciar el pago. Inténtalo de nuevo.",
-    "errorServer": "Error al conectar con el servidor de pagos."
+    "secureNote": "Pago seguro con Payhip · PayPal y Mercado Pago"
   },
   "projects": {
     "label": "Portfolio",

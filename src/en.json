@@ -11,7 +11,7 @@
     "greeting": "Hi, I'm",
     "name": "Yulimar Duque",
     "description": "I build mobile apps from zero to production. React Native Developer with 4+ years shipping products to App Store and Google Play.",
-    "cta_projects": "See projects",
+    "cta_projects": "View products",
     "cta_portfolio": "View portfolio →",
     "contact": "Get in touch",
     "resume": "Download CV"
@@ -38,11 +38,9 @@
     "feature5": "Pre-publish review checklist",
     "feature6": "Common errors and how to fix them",
     "priceNote": "Immediate access · PDF download",
+    "donationNote": "Your purchase also helps support those affected by the earthquakes in Venezuela 🇻🇪",
     "buyButton": "Buy now — $19 USD",
-    "processing": "Processing...",
-    "secureNote": "Secure payment with Stripe · We don't store your card data",
-    "errorPayment": "Error starting payment. Please try again.",
-    "errorServer": "Error connecting to the payment server."
+    "secureNote": "Secure payment via Payhip · PayPal & Mercado Pago"
   },
   "projects": {
     "label": "Portfolio",

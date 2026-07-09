@@ -282,6 +282,27 @@ export const BuyButton = styled.button`
   }
 `
 
+export const DonationNote = styled.p`
+  font-family: var(--font-sans, 'Outfit', sans-serif);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: ${({ theme }) => theme.foreground};
+  background: ${({ theme }) => theme.primary}12;
+  border: 1px solid ${({ theme }) => theme.primary}30;
+  border-radius: 0.625rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  svg {
+    flex-shrink: 0;
+    color: ${({ theme }) => theme.primary};
+  }
+`
+
 export const SecureNote = styled.p`
   font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 0.7rem;
