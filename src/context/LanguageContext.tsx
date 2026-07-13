@@ -26,11 +26,17 @@ export const LanguageContext = createContext<LanguageContextType | undefined>(un
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
   const [language, setLanguage] = useState<Language>("en")
 
-  // Load language preference from localStorage on client side
+  // Load language preference from localStorage, falling back to browser language
   useEffect(() => {
     const savedLanguage = localStorage.getItem("language") as Language
     if (savedLanguage && (savedLanguage === "en" || savedLanguage === "es")) {
       setLanguage(savedLanguage)
+      return
+    }
+
+    const browserLanguage = navigator.language.toLowerCase()
+    if (browserLanguage.startsWith("es")) {
+      setLanguage("es")
     }
   }, [])
 

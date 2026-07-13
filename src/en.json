@@ -11,7 +11,7 @@
     "greeting": "Hi, I'm",
     "name": "Yulimar Duque",
     "description": "I build mobile apps from zero to production. React Native Developer with 4+ years shipping products to App Store and Google Play.",
-    "cta_projects": "View products",
+    "cta_projects": "Download the guide",
     "cta_portfolio": "View portfolio →",
     "contact": "Get in touch",
     "resume": "Download CV"
@@ -29,7 +29,7 @@
     "subtitle": "Practical guides based on my real experience shipping apps to production.",
     "bookTitle": "Your App in the Stores",
     "bookAuthor": "by Yulimar Duque",
-    "badge": "Digital guide · PDF",
+    "badge": "Digital guide · Interactive HTML",
     "description": "Everything you need to know to publish your app on the App Store and Google Play — without losing your mind. Step by step, with real screenshots and the mistakes I made so you don't have to.",
     "feature1": "App Store Connect and Google Play Console setup",
     "feature2": "EAS Build: production builds with Expo",
@@ -37,7 +37,8 @@
     "feature4": "TestFlight and internal testing before launch",
     "feature5": "Pre-publish review checklist",
     "feature6": "Common errors and how to fix them",
-    "priceNote": "Immediate access · PDF download",
+    "previewLabel": "Look inside",
+    "priceNote": "Immediate access · Reads great on any device",
     "donationNote": "Your purchase also helps support those affected by the earthquakes in Venezuela 🇻🇪",
     "buyButton": "Buy now — $19 USD",
     "secureNote": "Secure payment via Payhip · PayPal & Mercado Pago"
@@ -45,7 +46,7 @@
   "projects": {
     "label": "Portfolio",
     "title": "Apps I've built",
-    "subtitle": "A selection of projects shipped to production and open source",
+    "subtitle": "Some of the projects I've worked on.",
     "appStore": "App Store",
     "googlePlay": "Google Play",
     "github": "GitHub",

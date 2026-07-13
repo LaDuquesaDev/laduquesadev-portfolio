@@ -22,7 +22,7 @@ import {
 } from "@/styles/hero-styles"
 
 export const Hero = () => {
-  const { t, scrollToAbout } = useHero()
+  const { t, scrollToAbout, checkoutUrl } = useHero()
 
   return (
     <HeroSection>
@@ -44,7 +44,7 @@ export const Hero = () => {
           <HeroSubtitle>{t("hero.description")}</HeroSubtitle>
 
           <ButtonGroup>
-            <PrimaryButton as="a" href="#products">
+            <PrimaryButton as="a" href={checkoutUrl}>
               {t("hero.cta_projects")}
             </PrimaryButton>
           </ButtonGroup>

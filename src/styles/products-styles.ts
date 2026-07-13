@@ -28,7 +28,9 @@ export const ProductsSection = styled.section`
 export const ProductsContainer = styled.div`
   max-width: 1100px;
   margin: 0 auto;
+
   padding: 0 2rem;
+
 `
 
 export const ProductsHeader = styled.div`
@@ -116,10 +118,10 @@ export const BookCover = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem 1.5rem;
   animation: ${float} 4s ease-in-out infinite;
   position: relative;
   cursor: default;
+  overflow: hidden;
 
   &::after {
     content: '';
@@ -130,6 +132,7 @@ export const BookCover = styled.div`
     width: 12px;
     background: rgba(0,0,0,0.25);
     border-radius: 8px 0 0 8px;
+    z-index: 2;
   }
 
   @media (min-width: 768px) {
@@ -159,6 +162,99 @@ export const BookTitleText = styled.div`
     font-size: 0.7rem;
     opacity: 0.85;
     font-family: var(--font-sans, 'Outfit', sans-serif);
+  }
+`
+
+export const PreviewGallery = styled.div`
+  margin-bottom: 1.75rem;
+`
+
+export const PreviewGalleryLabel = styled.span`
+  display: block;
+  font-family: var(--font-mono, 'Geist Mono', monospace);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.muted};
+  margin-bottom: 0.6rem;
+`
+
+export const PreviewThumbRow = styled.div`
+  display: flex;
+  gap: 0.75rem;
+`
+
+export const PreviewThumb = styled.button`
+  position: relative;
+  width: 84px;
+  height: 118px;
+  padding: 0;
+  border: 1px solid ${({ theme }) => theme.border};
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  background: ${({ theme }) => theme.secondary};
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+
+  &:hover, &:focus-visible {
+    transform: translateY(-4px);
+    border-color: ${({ theme }) => theme.primary};
+    box-shadow: 0 8px 20px ${({ theme }) => theme.primary}33;
+  }
+
+  @media (min-width: 768px) {
+    width: 96px;
+    height: 134px;
+  }
+`
+
+export const Lightbox = styled.div`
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: radial-gradient(ellipse at center, rgba(24,16,4,0.92) 0%, rgba(0,0,0,0.94) 100%);
+  animation: fadeIn 0.2s ease;
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+`
+
+export const LightboxImageWrap = styled.div`
+  position: relative;
+  width: min(90vw, 720px);
+  height: min(85vh, 900px);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px ${({ theme }) => theme.primary}44;
+`
+
+export const LightboxClose = styled.button`
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: ${({ theme }) => theme.primary};
+    border-color: ${({ theme }) => theme.primary};
   }
 `
 
@@ -225,15 +321,24 @@ export const ProductFeatureItem = styled.li`
 
 export const ProductPricing = styled.div`
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
   margin-bottom: 1.5rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
 `
 
 export const ProductPrice = styled.span`
   font-family: var(--font-display, 'DM Serif Display', Georgia, serif);
   font-size: 2.5rem;
   font-weight: 400;
+  white-space: nowrap;
+  flex-shrink: 0;
   background: linear-gradient(135deg, ${({ theme }) => theme.primary}, #FBBF24);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -244,6 +349,7 @@ export const ProductPriceNote = styled.span`
   font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 0.75rem;
   color: ${({ theme }) => theme.muted};
+  line-height: 1.5;
 `
 
 export const BuyButton = styled.button`

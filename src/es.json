@@ -11,7 +11,7 @@
     "greeting": "Hola, soy",
     "name": "Yulimar Duque",
     "description": "Construyo apps móviles de cero a producción. React Native Developer con +4 años de experiencia llevando proyectos del código a las tiendas — App Store y Google Play.",
-    "cta_projects": "Ver productos",
+    "cta_projects": "Descargar la guía",
     "cta_portfolio": "Ver portfolio →",
     "contact": "Contáctame",
     "resume": "Descargar CV"
@@ -29,7 +29,7 @@
     "subtitle": "Guías prácticas basadas en mi experiencia real publicando apps en producción.",
     "bookTitle": "Tu app en las tiendas",
     "bookAuthor": "por Yulimar Duque",
-    "badge": "Guía digital · PDF",
+    "badge": "Guía digital · HTML interactivo",
     "description": "Todo lo que necesitas saber para publicar tu app en App Store y Google Play — sin morir en el intento. Paso a paso, con capturas reales y los errores que cometí para que tú no los cometas.",
     "feature1": "Configuración de App Store Connect y Google Play Console",
     "feature2": "EAS Build: builds de producción con Expo",
@@ -37,7 +37,8 @@
     "feature4": "TestFlight y pruebas internas antes del lanzamiento",
     "feature5": "Checklist de revisión antes de publicar",
     "feature6": "Errores comunes y cómo resolverlos",
-    "priceNote": "Acceso inmediato · Descarga PDF",
+    "previewLabel": "Vista previa",
+    "priceNote": "Acceso inmediato · Se lee perfecto en cualquier dispositivo",
     "donationNote": "Con tu compra también contribuyes a apoyar a los afectados por los terremotos en Venezuela 🇻🇪",
     "buyButton": "Comprar ahora — $19 USD",
     "secureNote": "Pago seguro con Payhip · PayPal y Mercado Pago"
@@ -45,7 +46,7 @@
   "projects": {
     "label": "Portfolio",
     "title": "Apps que he construido",
-    "subtitle": "Una selección de proyectos llevados a producción y open source",
+    "subtitle": "Algunos de los proyectos en los que he trabajado.",
     "appStore": "App Store",
     "googlePlay": "Google Play",
     "github": "GitHub",

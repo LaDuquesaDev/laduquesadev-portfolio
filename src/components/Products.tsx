@@ -1,7 +1,9 @@
 "use client"
 
-import React from "react"
+import React, { useState } from "react"
+import Image from "next/image"
 import { useLanguage } from "@/hooks/useLanguage"
+import { CHECKOUT_URLS } from "@/lib/checkout"
 import {
   ProductsSection,
   ProductsContainer,
@@ -12,14 +14,19 @@ import {
   ProductCard,
   BookMockup,
   BookCover,
-  BookEmoji,
-  BookTitleText,
   ProductInfo,
   ProductBadge,
   ProductTitle,
   ProductDescription,
   ProductFeatures,
   ProductFeatureItem,
+  PreviewGallery,
+  PreviewGalleryLabel,
+  PreviewThumbRow,
+  PreviewThumb,
+  Lightbox,
+  LightboxImageWrap,
+  LightboxClose,
   ProductPricing,
   ProductPrice,
   ProductPriceNote,
@@ -28,13 +35,28 @@ import {
   SecureNote,
 } from "@/styles/products-styles"
 
-const CHECKOUT_URLS = {
-  es: "https://payhip.com/b/7ELrl",
-  en: "https://payhip.com/b/NTrbl",
+const COVER_IMAGES = {
+  en: "/screenshots/your_app_in_the_stores.png",
+  es: "/screenshots/tu_app_en_las_tiendas.png",
+}
+
+const PREVIEW_IMAGES = {
+  en: [
+    "/screenshots/captura_ingles_1.png",
+    "/screenshots/captura_ingles_2.png",
+    "/screenshots/captura_ingles_3.png",
+  ],
+  es: [
+    "/screenshots/captura_español_1.png",
+    "/screenshots/captura_español_2.png",
+    "/screenshots/captura_español_3.png",
+  ],
 }
 
 export const Products = () => {
   const { t, language } = useLanguage()
+  const [openPreview, setOpenPreview] = useState<string | null>(null)
+  const previewImages = PREVIEW_IMAGES[language]
 
   return (
     <ProductsSection id="products">
@@ -48,11 +70,12 @@ export const Products = () => {
         <ProductCard>
           <BookMockup>
             <BookCover>
-              <BookEmoji>📱</BookEmoji>
-              <BookTitleText>
-                <h3>{t("products.bookTitle")}</h3>
-                <p>{t("products.bookAuthor")}</p>
-              </BookTitleText>
+              <Image
+                src={COVER_IMAGES[language]}
+                alt={t("products.bookTitle")}
+                fill
+                style={{ objectFit: "cover", objectPosition: "left center" }}
+              />
             </BookCover>
           </BookMockup>
 
@@ -69,6 +92,17 @@ export const Products = () => {
               <ProductFeatureItem>{t("products.feature5")}</ProductFeatureItem>
               <ProductFeatureItem>{t("products.feature6")}</ProductFeatureItem>
             </ProductFeatures>
+
+            <PreviewGallery>
+              <PreviewGalleryLabel>{t("products.previewLabel")}</PreviewGalleryLabel>
+              <PreviewThumbRow>
+                {previewImages.map((src, i) => (
+                  <PreviewThumb key={src} onClick={() => setOpenPreview(src)} aria-label={`${t("products.bookTitle")} — preview ${i + 1}`}>
+                    <Image src={src} alt={`${t("products.bookTitle")} — preview ${i + 1}`} fill style={{ objectFit: "cover" }} />
+                  </PreviewThumb>
+                ))}
+              </PreviewThumbRow>
+            </PreviewGallery>
 
             <ProductPricing>
               <ProductPrice>$19 USD</ProductPrice>
@@ -99,6 +133,19 @@ export const Products = () => {
           </ProductInfo>
         </ProductCard>
       </ProductsContainer>
+
+      {openPreview && (
+        <Lightbox onClick={() => setOpenPreview(null)}>
+          <LightboxImageWrap onClick={(e) => e.stopPropagation()}>
+            <Image src={openPreview} alt={t("products.bookTitle")} fill style={{ objectFit: "contain" }} />
+            <LightboxClose onClick={() => setOpenPreview(null)} aria-label="Close">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M18 6 6 18M6 6l12 12" />
+              </svg>
+            </LightboxClose>
+          </LightboxImageWrap>
+        </Lightbox>
+      )}
 
       <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
     </ProductsSection>

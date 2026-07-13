@@ -1,9 +1,10 @@
 "use client"
 
 import { useLanguage } from "./useLanguage"
+import { CHECKOUT_URLS } from "@/lib/checkout"
 
 export const useHero = () => {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
 
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("about")
@@ -15,5 +16,6 @@ export const useHero = () => {
   return {
     t,
     scrollToAbout,
+    checkoutUrl: CHECKOUT_URLS[language],
   }
 }

@@ -34,7 +34,7 @@ export const Footer = () => {
               <FooterLink href="/#projects">{t("nav.portfolio")}</FooterLink>
               <FooterLink href="/#gallery">{t("nav.gallery")}</FooterLink>
               <FooterLink href="/#about">{t("nav.about")}</FooterLink>
-              {/* <FooterLink href="/portfolio">{t("nav.portfolio")}</FooterLink> */}
+              <FooterLink href="/#products">{t("nav.products")}</FooterLink>
             </FooterNav>
           </FooterSection>
 
