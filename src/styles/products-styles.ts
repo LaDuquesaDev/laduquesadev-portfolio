@@ -345,6 +345,17 @@ export const ProductPrice = styled.span`
   background-clip: text;
 `
 
+export const ProductPriceTag = styled.span`
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.375rem;
+  font-family: var(--font-sans, 'Outfit', sans-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: ${({ theme }) => theme.foreground};
+  margin-bottom: 1.25rem;
+`
+
 export const ProductPriceNote = styled.span`
   font-family: var(--font-mono, 'Geist Mono', monospace);
   font-size: 0.75rem;

@@ -28,6 +28,7 @@ import {
   LightboxImageWrap,
   LightboxClose,
   ProductPricing,
+  ProductPriceTag,
   ProductPriceNote,
   DonationNote,
   BuyButton,
@@ -52,6 +53,21 @@ const PREVIEW_IMAGES = {
   ],
 }
 
+const productJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Tu app en las tiendas",
+  description: "Guía interactiva para publicar tu app en App Store y Google Play, paso a paso y basada en experiencia real, con checklist de revisión.",
+  brand: { "@type": "Person", name: "Yulimar Duque" },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "COP",
+    price: "64000",
+    availability: "https://schema.org/InStock",
+    url: "https://checkout.wompi.co/l/WBMBMM",
+  },
+}
+
 export const Products = () => {
   const { t, language } = useLanguage()
   const [openPreview, setOpenPreview] = useState<string | null>(null)
@@ -59,6 +75,10 @@ export const Products = () => {
 
   return (
     <ProductsSection id="products">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       <ProductsContainer>
         <ProductsHeader>
           <ProductsLabel>{t("products.label")}</ProductsLabel>
@@ -102,6 +122,8 @@ export const Products = () => {
                 ))}
               </PreviewThumbRow>
             </PreviewGallery>
+
+            <ProductPriceTag>{t("products.price")}</ProductPriceTag>
 
             <ProductPricing>
               <ProductPriceNote>{t("products.priceNote")}</ProductPriceNote>
