@@ -8,9 +8,8 @@ const guideBuffer = readFileSync(
   path.join(process.cwd(), "src/assets/guides/tu-app-en-las-tiendas.html")
 )
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(request: NextRequest) {
+  const resend = new Resend(process.env.RESEND_API_KEY)
   const event = await request.json()
 
   const secret = process.env.WOMPI_EVENTS_SECRET
