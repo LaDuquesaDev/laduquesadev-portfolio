@@ -82,7 +82,7 @@ export const ProductCard = styled.div`
   background: ${({ theme }) => theme.background};
   border: 1px solid ${({ theme }) => theme.border};
   border-radius: 1.125rem;
-  padding: 3rem;
+  padding: 3rem 3rem 3rem 1.5rem;
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.10);
