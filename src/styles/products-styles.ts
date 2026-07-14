@@ -183,6 +183,9 @@ export const PreviewGalleryLabel = styled.span`
 export const PreviewThumbRow = styled.div`
   display: flex;
   gap: 0.75rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.25rem;
 `
 
 export const PreviewThumb = styled.button`
