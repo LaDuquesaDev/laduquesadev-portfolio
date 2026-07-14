@@ -28,7 +28,6 @@ import {
   LightboxImageWrap,
   LightboxClose,
   ProductPricing,
-  ProductPrice,
   ProductPriceNote,
   DonationNote,
   BuyButton,
@@ -105,7 +104,6 @@ export const Products = () => {
             </PreviewGallery>
 
             <ProductPricing>
-              <ProductPrice>$19 USD</ProductPrice>
               <ProductPriceNote>{t("products.priceNote")}</ProductPriceNote>
             </ProductPricing>
 
